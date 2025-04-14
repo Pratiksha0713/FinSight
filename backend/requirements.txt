@@ -3,3 +3,4 @@ uvicorn
 pydantic==1.10.9
 pandas
 python-multipart
+mangum
