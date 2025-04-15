@@ -178,7 +178,7 @@
   onMount(async () => {
     try {
       //const res = await fetch('http://localhost:8000/cashflow');
-      const res = await fetch("/api/cashflow");
+      const res = await fetch("https://finsight-p85x.onrender.com/cashflow");
 
       const raw = await res.text();
       data = JSON.parse(raw);

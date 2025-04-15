@@ -1,1 +1,16 @@
-node_modules
+# Node + Python
+node_modules/
+.venv/
+venv/
+venv*/
+venv311/         
+backend/venv/
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# Vercel + Build
+.vercel/
+dist/
+build/

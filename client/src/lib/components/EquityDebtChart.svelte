@@ -6,7 +6,7 @@
 
   onMount(async () => {
     //const res = await fetch('http://localhost:8000/data');
-    const res = await fetch("/api/data");
+    const res = await fetch("https://finsight-p85x.onrender.com/data");
 
     const rawData = await res.json();
 
