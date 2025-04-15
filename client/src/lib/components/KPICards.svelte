@@ -8,7 +8,9 @@
   let avgRoe = 0;
 
   onMount(async () => {
-    const res = await fetch("http://localhost:8000/data");
+    //const res = await fetch("http://localhost:8000/data");
+    const res = await fetch("/api/data");
+
     data = await res.json();
 
     totalRevenue = sum(data, "Revenue");

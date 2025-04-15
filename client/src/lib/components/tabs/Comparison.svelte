@@ -10,7 +10,9 @@
   let chart;
 
   const fetchCompanyData = async (company: string) => {
-    const res = await fetch('http://localhost:8000/data');
+    //const res = await fetch('http://localhost:8000/data');
+    const res = await fetch("/api/data");
+
     const all = await res.json();
     tickers = [...new Set(all.map((d) => d.Company))];
 
@@ -106,7 +108,9 @@
   };
 
   onMount(async () => {
-    const res = await fetch('http://localhost:8000/data');
+    //const res = await fetch('http://localhost:8000/data');
+    const res = await fetch("/api/data");
+
     const all = await res.json();
     tickers = [...new Set(all.map((d) => d.Company))];
     selectedCompany = tickers[0];

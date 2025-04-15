@@ -7,7 +7,9 @@
   let data = [];
 
   onMount(async () => {
-    const res = await fetch('http://localhost:8000/data');
+    //const res = await fetch('http://localhost:8000/data');
+    const res = await fetch("/api/data");
+
     const raw = await res.json();
 
     // Sanitize and aggregate Market Cap by Company

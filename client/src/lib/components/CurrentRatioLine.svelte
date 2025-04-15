@@ -6,7 +6,9 @@
   let chart: echarts.ECharts;
 
   onMount(async () => {
-    const res = await fetch('http://localhost:8000/data');
+   // const res = await fetch('http://localhost:8000/data');
+    const res = await fetch("/api/data");
+
     const data = await res.json();
 
     const grouped = data.reduce((acc, row) => {

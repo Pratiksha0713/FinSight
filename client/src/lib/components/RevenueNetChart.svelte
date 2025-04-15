@@ -7,7 +7,9 @@
   let data: any[] = [];
 
   onMount(async () => {
-    const res = await fetch('http://localhost:8000/data');
+    //const res = await fetch('http://localhost:8000/data');
+    const res = await fetch("/api/data");
+
     data = await res.json();
     renderChart();
   });

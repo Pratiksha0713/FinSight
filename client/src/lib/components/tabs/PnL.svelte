@@ -10,7 +10,9 @@
 
   onMount(async () => {
     try {
-      const res = await fetch('http://localhost:8000/pnl');
+      //const res = await fetch('http://localhost:8000/pnl');
+      const res = await fetch("/api/data");
+
       data = await res.json();
       companies = Object.keys(data);
       selected = companies[0];
