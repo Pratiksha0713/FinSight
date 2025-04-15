@@ -11,7 +11,7 @@
   onMount(async () => {
     try {
       //const res = await fetch('http://localhost:8000/pnl');
-      const res = await fetch("/api/data");
+      const res = await fetch("/api/pnl");
 
       data = await res.json();
       companies = Object.keys(data);

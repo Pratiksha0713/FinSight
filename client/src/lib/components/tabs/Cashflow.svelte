@@ -178,7 +178,7 @@
   onMount(async () => {
     try {
       //const res = await fetch('http://localhost:8000/cashflow');
-      const res = await fetch("/api/data");
+      const res = await fetch("/api/cashflow");
 
       const raw = await res.text();
       data = JSON.parse(raw);
